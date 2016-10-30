@@ -229,7 +229,7 @@ At the moment it's only used to perform custom animations on didScroll.
         bannerThin.backgroundColor=UIColor.blackColor()
         
         //NavBut
-        navBar.frame=CGRectMake(0, 0, self.view.frame.width, 64);
+        navBar.frame=CGRectMake(0, 0, self.view.frame.width, 0);
         navBar.backgroundColor=UIColor.clearColor()
         
         
@@ -248,9 +248,9 @@ At the moment it's only used to perform custom animations on didScroll.
         searchBut.setImage(UIImage(named: "search")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate), forState: UIControlState.Normal)
         searchBut.tintColor=UIColor.whiteColor()
         
-        navBar.addSubview(menuBut)
-        navBar.addSubview(searchBut)
-        navBar.addSubview(navTitle)
+        //navBar.addSubview(menuBut)
+        //navBar.addSubview(searchBut)
+        //navBar.addSubview(navTitle)
         view.insertSubview(navBar, aboveSubview: scrollview);
         
        self.setNeedsStatusBarAppearanceUpdate()
@@ -279,11 +279,10 @@ At the moment it's only used to perform custom animations on didScroll.
         self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.6, completion: nil)
         var images :[UIImage]!
         images=Array()
-        images.append(UIImage(named: "ironman.jpg")!)
-        images.append(UIImage(named: "worldbg.jpg")!)
-        images.append(UIImage(named: "sportsbg.jpg")!)
-        images.append(UIImage(named: "applebg.png")!)
-        images.append(UIImage(named: "businessbg.jpg")!)
+        images.append(UIImage(named: "food1.jpg")!)
+        images.append(UIImage(named: "food2.jpg")!)
+        images.append(UIImage(named: "food3.jpg")!)
+        images.append(UIImage(named: "food4.jpg")!)
         bannerImage.animateWithImages(images, transitionDuration:6, initialDelay: 0, loop: true, isLandscape: true)
 
     }

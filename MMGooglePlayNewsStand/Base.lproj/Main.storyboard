@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Detail View Controller-->
@@ -223,6 +224,61 @@
                                             <outlet property="headerImage" destination="BPB-r5-ffQ" id="Llf-ff-pZ8"/>
                                             <outlet property="middleView" destination="8nc-Hg-t1K" id="sMH-zt-r3a"/>
                                             <outlet property="titleNews" destination="9r2-5L-aQk" id="Xtk-4L-DTA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="qrcell" rowHeight="400" id="ZwC-3A-DOD" customClass="QRTableViewCell" customModule="MMGooglePlayNewsStand" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="342" width="600" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwC-3A-DOD" id="cft-eA-fPa">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-2P-aKf">
+                                                    <rect key="frame" x="16" y="16" width="568" height="368"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-r9-Clh">
+                                                            <rect key="frame" x="8" y="8" width="552" height="552"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="MzT-aD-8IM"/>
+                                                                <constraint firstAttribute="width" secondItem="Eai-r9-Clh" secondAttribute="height" multiplier="1:1" id="Pl3-OR-fXf"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="MzT-aD-8IM"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Eai-r9-Clh" firstAttribute="top" secondItem="sdP-2P-aKf" secondAttribute="top" constant="8" id="4x4-1L-Tew"/>
+                                                        <constraint firstItem="Eai-r9-Clh" firstAttribute="top" secondItem="sdP-2P-aKf" secondAttribute="top" id="9WK-fq-lKL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Eai-r9-Clh" secondAttribute="bottom" id="AGZ-DP-zTI"/>
+                                                        <constraint firstItem="Eai-r9-Clh" firstAttribute="leading" secondItem="sdP-2P-aKf" secondAttribute="leading" constant="8" id="HEZ-e2-FXu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Eai-r9-Clh" secondAttribute="trailing" constant="8" id="IzE-8w-LiP"/>
+                                                        <constraint firstItem="Eai-r9-Clh" firstAttribute="centerY" secondItem="sdP-2P-aKf" secondAttribute="centerY" id="Va8-lj-96K"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="9WK-fq-lKL"/>
+                                                            <exclude reference="AGZ-DP-zTI"/>
+                                                            <exclude reference="Va8-lj-96K"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="sdP-2P-aKf" secondAttribute="trailing" constant="16" id="2AH-GW-9WV"/>
+                                                <constraint firstItem="sdP-2P-aKf" firstAttribute="leading" secondItem="cft-eA-fPa" secondAttribute="leading" constant="16" id="31K-9D-1Ye"/>
+                                                <constraint firstItem="sdP-2P-aKf" firstAttribute="top" secondItem="cft-eA-fPa" secondAttribute="top" constant="16" id="lgf-LP-JCV"/>
+                                                <constraint firstAttribute="bottom" secondItem="sdP-2P-aKf" secondAttribute="bottom" constant="16" id="tO6-4y-xwh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="middleView" destination="sdP-2P-aKf" id="aLL-vP-xML"/>
+                                            <outlet property="qrImageView" destination="Eai-r9-Clh" id="Ayb-D9-Z2z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

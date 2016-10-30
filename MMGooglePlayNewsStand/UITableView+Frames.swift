@@ -11,10 +11,7 @@ import UIKit
 extension UITableView{
     
     func framesForRowAtIndexPath(indexpath : NSIndexPath) -> CGRect{
-        
         let cell = self.cellForRowAtIndexPath(indexpath) as! NewsCellTableViewCell
-        
         return self.convertRect(cell.frame, toView: UIApplication.sharedApplication().keyWindow)
-        
     }
 }

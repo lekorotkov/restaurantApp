@@ -42,6 +42,11 @@
 		557F66B11B8F02D80033E4A6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 557F66B01B8F02D80033E4A6 /* back.png */; };
 		557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */; };
 		5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5585D5CC1B8DC4A400DB7D3F /* newststand.gif */; };
+		8AD159891DC5D49500921298 /* food1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159851DC5D49500921298 /* food1.jpg */; };
+		8AD1598A1DC5D49500921298 /* food2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159861DC5D49500921298 /* food2.jpg */; };
+		8AD1598B1DC5D49500921298 /* food3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159871DC5D49500921298 /* food3.jpg */; };
+		8AD1598C1DC5D49500921298 /* food4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159881DC5D49500921298 /* food4.jpg */; };
+		8AD1598E1DC613B100921298 /* QRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1598D1DC613B100921298 /* QRTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +103,11 @@
 		557F66B01B8F02D80033E4A6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInCellAnimator.swift; sourceTree = "<group>"; };
 		5585D5CC1B8DC4A400DB7D3F /* newststand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newststand.gif; sourceTree = "<group>"; };
+		8AD159851DC5D49500921298 /* food1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food1.jpg; sourceTree = "<group>"; };
+		8AD159861DC5D49500921298 /* food2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food2.jpg; sourceTree = "<group>"; };
+		8AD159871DC5D49500921298 /* food3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food3.jpg; sourceTree = "<group>"; };
+		8AD159881DC5D49500921298 /* food4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food4.jpg; sourceTree = "<group>"; };
+		8AD1598D1DC613B100921298 /* QRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +202,7 @@
 				5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */,
 				557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */,
 				557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */,
+				8AD1598D1DC613B100921298 /* QRTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -210,6 +221,10 @@
 		5561F4DE1B8C44A500486A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8AD159851DC5D49500921298 /* food1.jpg */,
+				8AD159861DC5D49500921298 /* food2.jpg */,
+				8AD159871DC5D49500921298 /* food3.jpg */,
+				8AD159881DC5D49500921298 /* food4.jpg */,
 				557F66B01B8F02D80033E4A6 /* back.png */,
 				5561F4FA1B8C61D200486A57 /* ironman.jpg */,
 				5561F4F21B8C617E00486A57 /* applebg.png */,
@@ -329,7 +344,11 @@
 				5561F4B41B8C3DC700486A57 /* LaunchScreen.xib in Resources */,
 				5561F4B11B8C3DC700486A57 /* Images.xcassets in Resources */,
 				5561F4D71B8C448C00486A57 /* bg@2x.jpg in Resources */,
+				8AD1598C1DC5D49500921298 /* food4.jpg in Resources */,
 				5561F4F11B8C577A00486A57 /* highlights.png in Resources */,
+				8AD159891DC5D49500921298 /* food1.jpg in Resources */,
+				8AD1598A1DC5D49500921298 /* food2.jpg in Resources */,
+				8AD1598B1DC5D49500921298 /* food3.jpg in Resources */,
 				5561F4F81B8C617E00486A57 /* sportsbg.jpg in Resources */,
 				5561F5011B8C911100486A57 /* businessbg.jpg in Resources */,
 				5561F4EB1B8C54AB00486A57 /* movie.png in Resources */,
@@ -354,6 +373,7 @@
 			files = (
 				5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */,
 				557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */,
+				8AD1598E1DC613B100921298 /* QRTableViewCell.swift in Sources */,
 				5561F4AA1B8C3DC700486A57 /* AppDelegate.swift in Sources */,
 				557F66AD1B8EE9750033E4A6 /* UITableView+Frames.swift in Sources */,
 				5561F4D01B8C3E7B00486A57 /* UIColor+HexRepresentation.m in Sources */,

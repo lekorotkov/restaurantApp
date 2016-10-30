@@ -53,13 +53,24 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         // Do any additional setup after loading the view.
         self.setNeedsStatusBarAppearanceUpdate()
         
-        imageArr.append(UIImage(named: "ironman.jpg")!)
-        imageArr.append(UIImage(named: "worldbg.jpg")!)
-        imageArr.append(UIImage(named: "sportsbg.jpg")!)
-        imageArr.append(UIImage(named: "applebg.png")!)
-        imageArr.append(UIImage(named: "businessbg.jpg")!)
-        
-        
+        switch self.tag {
+        case 0:
+            imageArr.append(UIImage(named: "ironman.jpg")!)
+            imageArr.append(UIImage(named: "worldbg.jpg")!)
+            imageArr.append(UIImage(named: "sportsbg.jpg")!)
+            imageArr.append(UIImage(named: "applebg.png")!)
+            imageArr.append(UIImage(named: "businessbg.jpg")!)
+        case 1:
+            imageArr.append(UIImage(named: "ironman.jpg")!)
+        case 2:
+            imageArr.append(UIImage(named: "ironman.jpg")!)
+            imageArr.append(UIImage(named: "worldbg.jpg")!)
+            imageArr.append(UIImage(named: "sportsbg.jpg")!)
+            imageArr.append(UIImage(named: "applebg.png")!)
+            imageArr.append(UIImage(named: "businessbg.jpg")!)
+        default:
+            imageArr.append(UIImage(named: "ironman.jpg")!)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -86,27 +97,27 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
   
         switch ( tag){
         case 1:
-             headerImage.backgroundColor=UIColor(hexString: "9c27b0")
+             headerImage.backgroundColor=UIColor(hexString: "E18E59")
             headerImage.image=UIImage(named: "highlights")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 2:
-             headerImage.backgroundColor=UIColor(hexString: "009688")
+             headerImage.backgroundColor=UIColor(hexString: "E18E59")
               headerImage.image=UIImage(named: "sports")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 3:
-             headerImage.backgroundColor=UIColor(hexString: "673ab7")
+             headerImage.backgroundColor=UIColor(hexString: "E18E59")
               headerImage.image=UIImage(named: "movie")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 4:
-             headerImage.backgroundColor=UIColor(hexString: "ff9800")
+             headerImage.backgroundColor=UIColor(hexString: "E18E59")
               headerImage.image=UIImage(named: "tech")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 5:
-             headerImage.backgroundColor=UIColor(hexString: "03a9f4")
+             headerImage.backgroundColor=UIColor(hexString: "E18E59")
               headerImage.image=UIImage(named: "business")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
@@ -142,10 +153,16 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return imageArr.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if tag == 1 {
+            let cell:QRTableViewCell = tableView.dequeueReusableCellWithIdentifier("qrcell") as! QRTableViewCell
+            
+            return cell
+        }
+        
         let cell:NewsCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! NewsCellTableViewCell
         
         cell.headerImage.image=imageArr[indexPath.row]
@@ -153,12 +170,23 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         return cell
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if tag == 1 {
+            return 400
+        } else {
+            return 320
+        }
+    }
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let detail = self.storyboard?.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
-        detail.modalPresentationStyle = UIModalPresentationStyle.Custom;
-        detail.transitioningDelegate = transitionManager;
-        appDelegate.walkthrough?.presentViewController(detail, animated: true, completion: nil)
+        if tag == 0 {
+            let detail = self.storyboard?.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
+            detail.modalPresentationStyle = UIModalPresentationStyle.Custom;
+            detail.transitioningDelegate = transitionManager;
+            appDelegate.walkthrough?.presentViewController(detail, animated: true, completion: nil)
+        }
+        
 //        self.presentViewController(detail, animated: true, completion: nil)
 
     }
