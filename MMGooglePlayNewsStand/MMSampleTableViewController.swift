@@ -163,6 +163,12 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             return cell
         }
         
+        if tag == 3 {
+            let cell:InfoTableViewCell = tableView.dequeueReusableCellWithIdentifier("InfoCell") as! InfoTableViewCell
+            
+            return cell
+        }
+        
         let cell:NewsCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! NewsCellTableViewCell
         
         cell.headerImage.image=imageArr[indexPath.row]
@@ -173,6 +179,8 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if tag == 1 {
             return 400
+        } else if tag == 3 {
+            return 600
         } else {
             return 320
         }

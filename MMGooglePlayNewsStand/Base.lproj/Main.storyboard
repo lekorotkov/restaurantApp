@@ -226,8 +226,72 @@
                                             <outlet property="titleNews" destination="9r2-5L-aQk" id="Xtk-4L-DTA"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="320" id="SiJ-5m-Rq3" customClass="InfoTableViewCell" customModule="MMGooglePlayNewsStand" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="342" width="600" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SiJ-5m-Rq3" id="2Yx-Zg-1Ad">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHj-Lw-ojU">
+                                                    <rect key="frame" x="16" y="16" width="568" height="288"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-9Z-jCN">
+                                                            <rect key="frame" x="16" y="208" width="552" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Ujm-qj-lNz"/>
+                                                                <constraint firstAttribute="height" constant="35" id="V9Q-Oh-JIb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-c3-pxa">
+                                                            <rect key="frame" x="16" y="251" width="552" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="6su-1N-r0I"/>
+                                                                <constraint firstAttribute="height" constant="21" id="WQ6-6h-gJk"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-Zy-dOn" customClass="GMSMapView">
+                                                            <rect key="frame" x="8" y="8" width="552" height="192"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="C7X-9Z-jCN" secondAttribute="trailing" id="9gw-Fx-re8"/>
+                                                        <constraint firstItem="C7X-9Z-jCN" firstAttribute="top" secondItem="Gg9-Zy-dOn" secondAttribute="bottom" constant="8" id="EL8-l7-8DW"/>
+                                                        <constraint firstItem="Ned-c3-pxa" firstAttribute="leading" secondItem="gHj-Lw-ojU" secondAttribute="leading" constant="16" id="KVz-6x-bwZ"/>
+                                                        <constraint firstItem="Ned-c3-pxa" firstAttribute="top" secondItem="C7X-9Z-jCN" secondAttribute="bottom" constant="8" id="M2b-sC-T0f"/>
+                                                        <constraint firstItem="C7X-9Z-jCN" firstAttribute="leading" secondItem="gHj-Lw-ojU" secondAttribute="leading" constant="16" id="gzi-EM-Ilb"/>
+                                                        <constraint firstItem="Gg9-Zy-dOn" firstAttribute="leading" secondItem="gHj-Lw-ojU" secondAttribute="leading" constant="8" id="hpx-Al-zJ9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Gg9-Zy-dOn" secondAttribute="trailing" constant="8" id="k0G-2A-hc9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ned-c3-pxa" secondAttribute="trailing" id="kh6-uE-ZJU"/>
+                                                        <constraint firstItem="Gg9-Zy-dOn" firstAttribute="top" secondItem="gHj-Lw-ojU" secondAttribute="top" constant="8" id="l8b-wS-A4Z"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ned-c3-pxa" secondAttribute="bottom" constant="16" id="lnB-oG-dpO"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gHj-Lw-ojU" secondAttribute="trailing" constant="16" id="2HF-Tn-iHw"/>
+                                                <constraint firstItem="gHj-Lw-ojU" firstAttribute="leading" secondItem="2Yx-Zg-1Ad" secondAttribute="leading" constant="16" id="P2k-R9-Jfy"/>
+                                                <constraint firstAttribute="bottom" secondItem="gHj-Lw-ojU" secondAttribute="bottom" constant="16" id="QFO-vp-sOY"/>
+                                                <constraint firstItem="gHj-Lw-ojU" firstAttribute="top" secondItem="2Yx-Zg-1Ad" secondAttribute="top" constant="16" id="xeg-K2-Mgg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="mapView" destination="Gg9-Zy-dOn" id="Xl1-z5-2tu"/>
+                                            <outlet property="middleView" destination="gHj-Lw-ojU" id="I1g-ej-nnH"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="qrcell" rowHeight="400" id="ZwC-3A-DOD" customClass="QRTableViewCell" customModule="MMGooglePlayNewsStand" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="342" width="600" height="400"/>
+                                        <rect key="frame" x="0.0" y="662" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwC-3A-DOD" id="cft-eA-fPa">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>

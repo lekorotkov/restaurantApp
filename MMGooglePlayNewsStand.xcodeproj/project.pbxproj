@@ -42,11 +42,13 @@
 		557F66B11B8F02D80033E4A6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 557F66B01B8F02D80033E4A6 /* back.png */; };
 		557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */; };
 		5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5585D5CC1B8DC4A400DB7D3F /* newststand.gif */; };
+		8A8FA38D1DD3C7FC00EC46DA /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8FA38C1DD3C7FC00EC46DA /* InfoTableViewCell.swift */; };
 		8AD159891DC5D49500921298 /* food1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159851DC5D49500921298 /* food1.jpg */; };
 		8AD1598A1DC5D49500921298 /* food2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159861DC5D49500921298 /* food2.jpg */; };
 		8AD1598B1DC5D49500921298 /* food3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159871DC5D49500921298 /* food3.jpg */; };
 		8AD1598C1DC5D49500921298 /* food4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159881DC5D49500921298 /* food4.jpg */; };
 		8AD1598E1DC613B100921298 /* QRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1598D1DC613B100921298 /* QRTableViewCell.swift */; };
+		A1E8EF5577AEA4F43C9F6F58 /* libPods-MMGooglePlayNewsStand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A375FD25656F8BFA052CDC /* libPods-MMGooglePlayNewsStand.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A375FD25656F8BFA052CDC /* libPods-MMGooglePlayNewsStand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMGooglePlayNewsStand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5561F4A41B8C3DC700486A57 /* MMGooglePlayNewsStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMGooglePlayNewsStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5561F4A81B8C3DC700486A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5561F4A91B8C3DC700486A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,11 +106,14 @@
 		557F66B01B8F02D80033E4A6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInCellAnimator.swift; sourceTree = "<group>"; };
 		5585D5CC1B8DC4A400DB7D3F /* newststand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newststand.gif; sourceTree = "<group>"; };
+		60AEDA800AD4552CC62DB14D /* Pods-MMGooglePlayNewsStand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGooglePlayNewsStand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMGooglePlayNewsStand/Pods-MMGooglePlayNewsStand.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8FA38C1DD3C7FC00EC46DA /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		8AD159851DC5D49500921298 /* food1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food1.jpg; sourceTree = "<group>"; };
 		8AD159861DC5D49500921298 /* food2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food2.jpg; sourceTree = "<group>"; };
 		8AD159871DC5D49500921298 /* food3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food3.jpg; sourceTree = "<group>"; };
 		8AD159881DC5D49500921298 /* food4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food4.jpg; sourceTree = "<group>"; };
 		8AD1598D1DC613B100921298 /* QRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRTableViewCell.swift; sourceTree = "<group>"; };
+		C3731D51B4FBD7D9EAE764C1 /* Pods-MMGooglePlayNewsStand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGooglePlayNewsStand.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMGooglePlayNewsStand/Pods-MMGooglePlayNewsStand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E8EF5577AEA4F43C9F6F58 /* libPods-MMGooglePlayNewsStand.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +135,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04FDC13EFA733A0050C5F897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A375FD25656F8BFA052CDC /* libPods-MMGooglePlayNewsStand.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5561F49B1B8C3DC700486A57 = {
 			isa = PBXGroup;
 			children = (
 				5561F4A61B8C3DC700486A57 /* MMGooglePlayNewsStand */,
 				5561F4BC1B8C3DC700486A57 /* MMGooglePlayNewsStandTests */,
 				5561F4A51B8C3DC700486A57 /* Products */,
+				E71FCF83BECD274C93E09854 /* Pods */,
+				04FDC13EFA733A0050C5F897 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +220,7 @@
 				557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */,
 				557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */,
 				8AD1598D1DC613B100921298 /* QRTableViewCell.swift */,
+				8A8FA38C1DD3C7FC00EC46DA /* InfoTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -246,6 +264,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		E71FCF83BECD274C93E09854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60AEDA800AD4552CC62DB14D /* Pods-MMGooglePlayNewsStand.debug.xcconfig */,
+				C3731D51B4FBD7D9EAE764C1 /* Pods-MMGooglePlayNewsStand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5561F4C31B8C3DC700486A57 /* Build configuration list for PBXNativeTarget "MMGooglePlayNewsStand" */;
 			buildPhases = (
+				B2779E4411158D647CCE0B02 /* [CP] Check Pods Manifest.lock */,
 				5561F4A01B8C3DC700486A57 /* Sources */,
 				5561F4A11B8C3DC700486A57 /* Frameworks */,
 				5561F4A21B8C3DC700486A57 /* Resources */,
+				5C5B4700FCAB55149F8435C6 /* [CP] Embed Pods Frameworks */,
+				92A56F6E995AF45088465885 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,6 +398,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C5B4700FCAB55149F8435C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMGooglePlayNewsStand/Pods-MMGooglePlayNewsStand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A56F6E995AF45088465885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMGooglePlayNewsStand/Pods-MMGooglePlayNewsStand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2779E4411158D647CCE0B02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5561F4A01B8C3DC700486A57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -384,6 +462,7 @@
 				5561F4D11B8C3E7B00486A57 /* UIView+MaterialDesign.m in Sources */,
 				557F66A91B8EDB240033E4A6 /* TransitionModel.swift in Sources */,
 				557F66AB1B8EDC810033E4A6 /* DetailViewController.swift in Sources */,
+				8A8FA38D1DD3C7FC00EC46DA /* InfoTableViewCell.swift in Sources */,
 				5561F4FF1B8C885600486A57 /* NewsCellTableViewCell.swift in Sources */,
 				5561F4D41B8C3EC300486A57 /* MMSampleTableViewController.swift in Sources */,
 			);
@@ -516,6 +595,7 @@
 		};
 		5561F4C41B8C3DC700486A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AEDA800AD4552CC62DB14D /* Pods-MMGooglePlayNewsStand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -533,6 +613,7 @@
 		};
 		5561F4C51B8C3DC700486A57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3731D51B4FBD7D9EAE764C1 /* Pods-MMGooglePlayNewsStand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
