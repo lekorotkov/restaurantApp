@@ -180,7 +180,7 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         if tag == 1 {
             return 400
         } else if tag == 3 {
-            return 600
+            return 400
         } else {
             return 320
         }

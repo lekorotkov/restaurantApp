@@ -20,6 +20,16 @@ class InfoTableViewCell: UITableViewCell {
         middleView.layer.shadowRadius = 8.0
         middleView.layer.shadowOpacity  = 1.0
         middleView.layer.masksToBounds=true
+        
+        let camera = GMSCameraPosition.cameraWithLatitude(53.9037977,
+                                                          longitude: 27.5516832, zoom: 17)
+        mapView.camera = camera
+        
+        let position = CLLocationCoordinate2DMake(53.9037977, 27.5516832)
+        let marker = GMSMarker(position: position)
+        marker.title = "Барбершоп Тайга"
+        marker.map = mapView
+        
     }
     
 }
