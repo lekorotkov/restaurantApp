@@ -24,7 +24,7 @@ class TransitionModel: NSObject , UIViewControllerAnimatedTransitioning , UIView
             let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! DetailViewController
 
             toVC.view.alpha=0
-            transitionContext.containerView()!.addSubview(toVC.view)
+            transitionContext.containerView().addSubview(toVC.view)
             
             let snapshot = UIView()
             snapshot.backgroundColor=UIColor.whiteColor()
@@ -33,7 +33,7 @@ class TransitionModel: NSObject , UIViewControllerAnimatedTransitioning , UIView
             snapshot.frame=CGRectMake(16, snapshot.frame.origin.y, snapshot.frame.width-32, snapshot.frame.height)
 //            NSLog("%@", snapshot)
             toVC.dismissFrame = snapshot.frame
-            transitionContext.containerView()!.addSubview(snapshot)
+            transitionContext.containerView().addSubview(snapshot)
             
             UIView.animateWithDuration(0.5, animations: { () -> Void in
                 
@@ -62,7 +62,7 @@ class TransitionModel: NSObject , UIViewControllerAnimatedTransitioning , UIView
             let snapshot = UIView()
             snapshot.backgroundColor=UIColor.whiteColor()
             snapshot.frame = fromVC.view.frame
-            transitionContext.containerView()!.addSubview(snapshot)
+            transitionContext.containerView().addSubview(snapshot)
             UIView.animateWithDuration(0.5, animations: { () -> Void in
                 
                 

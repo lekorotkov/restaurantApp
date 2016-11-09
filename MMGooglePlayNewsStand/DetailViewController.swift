@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         navBut.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         navBut.tintColor=UIColor.whiteColor()
         navBut.setImage(UIImage(named: "back")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate), forState: UIControlState.Normal)
-        navBut.addTarget(self, action: "dismiss", forControlEvents: UIControlEvents.TouchUpInside)
+        navBut.addTarget(self, action: #selector(DetailViewController.dismiss), forControlEvents: UIControlEvents.TouchUpInside)
         navTitle.textColor=UIColor.whiteColor()
         navTitle.font=UIFont(name: "Roboto-Medium", size: 20)
         navTitle.text="Detail Page"

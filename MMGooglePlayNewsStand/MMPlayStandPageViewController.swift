@@ -121,7 +121,7 @@ At the moment it's only used to perform custom animations on didScroll.
         x=0;y=0;buffer=10
        
         
-        for var i=0; i < titles.count; i++ {
+        for i in 0 ..< titles.count {
             
             var titleLabel:UILabel!
             var bottomView:UIView!
@@ -145,7 +145,7 @@ At the moment it's only used to perform custom animations on didScroll.
             bottomView.backgroundColor=UIColor.whiteColor()
             
             
-            let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+            let tap = UITapGestureRecognizer(target: self, action: #selector(MMPlayStandPageViewController.handleTap(_:)))
             tap.delegate = self
             titleLabel.addGestureRecognizer(tap)
             
@@ -470,7 +470,7 @@ At the moment it's only used to perform custom animations on didScroll.
     func scrollViewDidScroll(sv: UIScrollView) {
         
         
-        for var i=0; i < controllers.count; i++ {
+        for i in 0 ..< controllers.count {
             
             if let vc = controllers[i] as? MMPlayPageScroll{
                 
@@ -519,7 +519,7 @@ At the moment it's only used to perform custom animations on didScroll.
             var navBarTransform : CATransform3D! = CATransform3DIdentity
             var imageTransform : CATransform3D! = CATransform3DIdentity
             //        NSLog("Hello Y-Axis %f",offset)
-            for var i=0; i < controllers.count; i++ {
+            for i in 0 ..< controllers.count {
                 if(controllers[i].isKindOfClass(MMSampleTableViewController)){
                     let temp=controllers[i] as! MMSampleTableViewController
                     temp.tableView.contentOffset=CGPointMake(0, offset)
