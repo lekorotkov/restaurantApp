@@ -36,7 +36,7 @@ let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let stb = UIStoryboard(name: "Main", bundle: nil)
         
         let page_one = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
-        let page_two = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
+        let page_two = CollapsibleTableViewController()
         let page_three = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
         
         //header Color
