@@ -35,26 +35,22 @@ let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         let stb = UIStoryboard(name: "Main", bundle: nil)
         
-        
-        let page_zero = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
         let page_one = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
         let page_two = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
         let page_three = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
         
         //header Color
-        page_zero.tag=0
         page_one.tag=1
         page_two.tag=2
         page_three.tag=3
         
         // Attach the pages to the master
         appDelegate.walkthrough?.delegate = self
-        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_zero, title: "Новости", color: UIColor(hexString: "E18E59"))
         appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_one, title: "Скидки", color:UIColor(hexString: "E18E59"))
        
-        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Меню", color:UIColor(hexString: "E18E59"))
+        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Стрижки", color:UIColor(hexString: "E18E59"))
         
-        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_three, title: "Местоположение", color:UIColor(hexString: "E18E59"))
+        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_three, title: "Расположение", color:UIColor(hexString: "E18E59"))
     }
 
     @IBAction func showDemoAction(sender: AnyObject) {
