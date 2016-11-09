@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11DAC7201DD3D3CE00DB5824 /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAC71D1DD3D3CE00DB5824 /* CollapsibleTableViewController.swift */; };
 		11DAC7211DD3D3CE00DB5824 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAC71E1DD3D3CE00DB5824 /* CollapsibleTableViewHeader.swift */; };
 		11DAC7221DD3D3CE00DB5824 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAC71F1DD3D3CE00DB5824 /* Extensions.swift */; };
+		11DAC7271DD3E51500DB5824 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAC7261DD3E51500DB5824 /* DetailTableViewCell.swift */; };
 		5561F4AA1B8C3DC700486A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4A91B8C3DC700486A57 /* AppDelegate.swift */; };
 		5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4AB1B8C3DC700486A57 /* ViewController.swift */; };
 		5561F4AF1B8C3DC700486A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4AD1B8C3DC700486A57 /* Main.storyboard */; };
@@ -70,9 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11DAC71D1DD3D3CE00DB5824 /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
 		11DAC71E1DD3D3CE00DB5824 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		11DAC71F1DD3D3CE00DB5824 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		11DAC7261DD3E51500DB5824 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		13A375FD25656F8BFA052CDC /* libPods-MMGooglePlayNewsStand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMGooglePlayNewsStand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5561F4A41B8C3DC700486A57 /* MMGooglePlayNewsStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMGooglePlayNewsStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5561F4A81B8C3DC700486A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -236,6 +236,7 @@
 				557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */,
 				557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */,
 				8AD1598D1DC613B100921298 /* QRTableViewCell.swift */,
+				11DAC7261DD3E51500DB5824 /* DetailTableViewCell.swift */,
 				8A8FA38C1DD3C7FC00EC46DA /* InfoTableViewCell.swift */,
 			);
 			name = Model;
@@ -244,7 +245,6 @@
 		5561F4D51B8C408E00486A57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				11DAC71D1DD3D3CE00DB5824 /* CollapsibleTableViewController.swift */,
 				11DAC71E1DD3D3CE00DB5824 /* CollapsibleTableViewHeader.swift */,
 				11DAC71F1DD3D3CE00DB5824 /* Extensions.swift */,
 				5561F4AB1B8C3DC700486A57 /* ViewController.swift */,
@@ -480,8 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DAC7201DD3D3CE00DB5824 /* CollapsibleTableViewController.swift in Sources */,
 				5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */,
+				11DAC7271DD3E51500DB5824 /* DetailTableViewCell.swift in Sources */,
 				11DAC7211DD3D3CE00DB5824 /* CollapsibleTableViewHeader.swift in Sources */,
 				557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */,
 				8AD1598E1DC613B100921298 /* QRTableViewCell.swift in Sources */,

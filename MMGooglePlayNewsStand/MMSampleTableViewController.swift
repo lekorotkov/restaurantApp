@@ -15,10 +15,25 @@ import UIKit
     @objc optional func getframeindexpathOfController()->CGRect
 }
 
+struct Section {
+    var name: String!
+    var items: [String]!
+    var costs: [String]!
+    var collapsed: Bool!
+    
+    init(name: String, items: [String], costs: [String], collapsed: Bool = true) {
+        self.name = name
+        self.costs = costs
+        self.items = items
+        self.collapsed = collapsed
+    }
+}
+
 class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,MMPlayPageScroll ,UIScrollViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     let header: UIView!
+    var sections = [Section]()
     let headerImage: UIImageView!
     var trans:CGPoint
     var imageArr:[UIImage]!
@@ -71,6 +86,20 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         default:
             imageArr.append(UIImage(named: "ironman.jpg")!)
         }
+        
+//        sections = [
+//            Section(name: "Стрижки", items: ["Стрижка машинкой", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]),
+//            Section(name: "iPad", items: ["iPad Pro", "iPad Air 2", "iPad mini 4", "Accessories"]),
+//            Section(name: "iPhone", items: ["iPhone 6s", "iPhone 6", "iPhone SE", "Accessories"]),
+//        ]
+        
+        sections = [
+            Section(name: "Стрижки", items: ["Стрижка машинкой", "Стрижка", "Детская стрижка", "Укладка"], costs: ["20", "25", "20", "5"]),
+            Section(name: "Бритьё", items: ["Королевское бритьё", "Стрижка бороды"], costs: ["30", "20"]),
+            Section(name: "Комплекс", items: ["Королевское бритьё и стрижка", "Королевское бритьё и стрижка машинкой", "Стрижка бороды и стрижка", "Стрижка бороды и стрижка машинкой"], costs: ["55", "50", "45", "40"]),
+            Section(name: "Тонировка и окраска", items: ["Тонировка бороды"], costs: ["20-30"]),
+            Section(name: "Маски", items: ["Маски для лица"], costs: ["10"])
+        ]
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -141,6 +170,9 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if tag == 2 {
+            return sections.count
+        }
         return 1;
     }
     
@@ -153,6 +185,9 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (tag == 2) {
+            return sections[section].items.count
+        }
         return imageArr.count
     }
     
@@ -169,6 +204,14 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             return cell
         }
         
+        if tag == 2 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("DetailTableViewCell") as! DetailTableViewCell? ?? DetailTableViewCell(style: .Value1, reuseIdentifier: "DetailTableViewCell")
+//            cell.backgroundColor = UIColor.whiteColor()
+            cell.mainLabel.text = sections[indexPath.section].items[indexPath.row]
+            cell.detailLabel.text = sections[indexPath.section].costs[indexPath.row] + " Br"
+            return cell
+        }
+        
         let cell:NewsCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! NewsCellTableViewCell
         
         cell.headerImage.image=imageArr[indexPath.row]
@@ -181,11 +224,35 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             return 400
         } else if tag == 3 {
             return 400
-        } else {
-            return 320
+        } else if tag == 2 {
+            return sections[indexPath.section].collapsed! ? 0 : 44.0
         }
+        return 44
     }
     
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if tag == 2 {
+            let header = tableView.dequeueReusableHeaderFooterViewWithIdentifier("header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+            
+            header.titleLabel.text = sections[section].name
+            header.arrowLabel.text = ">"
+            header.setCollapsed(sections[section].collapsed)
+            
+            header.section = section
+            header.delegate = self
+            
+            return header
+        }
+        return nil
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            return 44.0
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1.0
+    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tag == 0 {
@@ -214,6 +281,25 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     
     
     
+    
+}
+
+extension MMSampleTableViewController: CollapsibleTableViewHeaderDelegate {
+    
+    func toggleSection(header: CollapsibleTableViewHeader, section: Int) {
+        let collapsed = !sections[section].collapsed
+        
+        // Toggle collapse
+        sections[section].collapsed = collapsed
+        header.setCollapsed(collapsed)
+        
+        // Adjust the height of the rows inside the section
+        tableView.beginUpdates()
+        for i in 0 ..< sections[section].items.count {
+            tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: i, inSection: section)], withRowAnimation: .Automatic)
+        }
+        tableView.endUpdates()
+    }
     
 }
 
