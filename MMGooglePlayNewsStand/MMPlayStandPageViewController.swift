@@ -279,10 +279,11 @@ At the moment it's only used to perform custom animations on didScroll.
         self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.6, completion: nil)
         var images :[UIImage]!
         images=Array()
-        images.append(UIImage(named: "food1.jpg")!)
-        images.append(UIImage(named: "food2.jpg")!)
-        images.append(UIImage(named: "food3.jpg")!)
-        images.append(UIImage(named: "food4.jpg")!)
+        images.append(UIImage(named: "salon-1-1.jpg")!)
+        images.append(UIImage(named: "salon-1-2.jpg")!)
+        images.append(UIImage(named: "salon-1-3.jpg")!)
+        images.append(UIImage(named: "salon-1-4.jpg")!)
+        images.append(UIImage(named: "salon-1-5.jpg")!)
         bannerImage.animateWithImages(images, transitionDuration:6, initialDelay: 0, loop: true, isLandscape: true)
 
     }

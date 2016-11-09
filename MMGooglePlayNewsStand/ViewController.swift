@@ -50,7 +50,7 @@ let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
        
         appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Стрижки", color:UIColor(hexString: "E18E59"))
         
-        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_three, title: "Расположение", color:UIColor(hexString: "E18E59"))
+        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_three, title: "О Нас", color:UIColor(hexString: "E18E59"))
     }
 
     @IBAction func showDemoAction(sender: AnyObject) {
