@@ -247,11 +247,17 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if tag == 2 {
             return 44.0
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 1.0
+        if tag == 2 {
+            return 1.0
+        }
+        return 0
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
