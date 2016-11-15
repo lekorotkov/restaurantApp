@@ -48,7 +48,7 @@ let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.walkthrough?.delegate = self
         appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_one, title: "Скидки", color:UIColor(hexString: "E18E59"))
        
-        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Стрижки", color:UIColor(hexString: "E18E59"))
+        appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Цены", color:UIColor(hexString: "E18E59"))
         
         appDelegate.walkthrough?.addViewControllerWithTitleandColor(page_three, title: "О Нас", color:UIColor(hexString: "E18E59"))
     }
