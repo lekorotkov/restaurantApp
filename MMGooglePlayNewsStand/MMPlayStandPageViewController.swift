@@ -283,7 +283,6 @@ At the moment it's only used to perform custom animations on didScroll.
         images.append(UIImage(named: "salon-1-2.jpg")!)
         images.append(UIImage(named: "salon-1-3.jpg")!)
         images.append(UIImage(named: "salon-1-4.jpg")!)
-        images.append(UIImage(named: "salon-1-5.jpg")!)
         bannerImage.animateWithImages(images, transitionDuration:6, initialDelay: 0, loop: true, isLandscape: true)
 
     }

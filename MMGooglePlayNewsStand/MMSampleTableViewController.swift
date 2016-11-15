@@ -94,11 +94,8 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
 //        ]
         
         sections = [
-            Section(name: "Стрижки", items: ["Стрижка машинкой", "Стрижка", "Детская стрижка", "Укладка"], costs: ["20", "25", "20", "5"]),
-            Section(name: "Бритьё", items: ["Королевское бритьё", "Стрижка бороды"], costs: ["30", "20"]),
-            Section(name: "Комплекс", items: ["Королевское бритьё и стрижка", "Королевское бритьё и стрижка машинкой", "Стрижка бороды и стрижка", "Стрижка бороды и стрижка машинкой"], costs: ["55", "50", "45", "40"]),
-            Section(name: "Тонировка и окраска", items: ["Тонировка бороды"], costs: ["20-30"]),
-            Section(name: "Маски", items: ["Маски для лица"], costs: ["10"])
+            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой", "Стрижка Усов"], costs: ["30", "20", "20", "20"]),
+            Section(name: "Бритьё", items: ["Стрижка Бороды", "Бритье Опасной Бритвой"], costs: ["20", "35"])
         ]
     }
     
@@ -208,7 +205,7 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             let cell = tableView.dequeueReusableCellWithIdentifier("DetailTableViewCell") as! DetailTableViewCell? ?? DetailTableViewCell(style: .Value1, reuseIdentifier: "DetailTableViewCell")
 //            cell.backgroundColor = UIColor.whiteColor()
             cell.mainLabel.text = sections[indexPath.section].items[indexPath.row]
-            cell.detailLabel.text = sections[indexPath.section].costs[indexPath.row] + " Br"
+            cell.detailLabel.text = sections[indexPath.section].costs[indexPath.row] + " руб."
             return cell
         }
         
