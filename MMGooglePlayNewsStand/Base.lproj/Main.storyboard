@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFm-Of-ceo">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="worldbg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o5c-bU-2Wh">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
@@ -43,6 +46,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMm-RR-PXN">
+                                                <rect key="frame" x="8" y="239" width="250" height="61"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="61" id="VFx-Ml-eXn"/>
                                                     <constraint firstAttribute="width" constant="250" id="rCW-bR-g7G"/>
@@ -106,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-VB-h1u">
-                                <frame key="frameInset" minX="260" minY="260" width="80" height="80"/>
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="O2R-Nx-n2a"/>
                                     <constraint firstAttribute="height" constant="80" id="SCs-Lk-tbJ"/>
@@ -119,7 +123,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Demo to mock Google Play NewStand app.Tap Below To see the DEMO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-dg-j3B">
-                                <frame key="frameInset" minX="160" minY="28" width="280" height="158"/>
+                                <rect key="frame" x="160" y="28" width="280" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="9m9-ox-f3Z"/>
                                     <constraint firstAttribute="height" constant="158" id="z11-ww-YqW"/>
@@ -158,6 +162,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="320" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-WX-17k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -165,17 +170,20 @@
                                         <rect key="frame" x="0.0" y="22" width="375" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fEP-2N-NVP" id="aNU-RL-zjH">
-                                            <frame key="frameInset" width="375" height="320"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nc-Hg-t1K">
+                                                    <rect key="frame" x="16" y="16" width="343" height="288"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-r5-ffQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="200"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="200" id="VRV-bk-vYm"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r2-5L-aQk">
+                                                            <rect key="frame" x="16" y="208" width="327" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="mYg-NJ-05G"/>
                                                             </constraints>
@@ -184,6 +192,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugS-pv-8HB">
+                                                            <rect key="frame" x="16" y="251" width="327" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Eg9-Bc-Tdr"/>
                                                             </constraints>
@@ -226,25 +235,29 @@
                                         <rect key="frame" x="0.0" y="342" width="375" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SiJ-5m-Rq3" id="2Yx-Zg-1Ad">
-                                            <frame key="frameInset" width="375" height="320"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHj-Lw-ojU">
+                                                    <rect key="frame" x="16" y="16" width="343" height="288"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-Zy-dOn" customClass="GMSMapView">
+                                                            <rect key="frame" x="8" y="8" width="327" height="124"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWp-0e-F93">
+                                                            <rect key="frame" x="8" y="140" width="327" height="140"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="140" id="FpY-VT-xAb"/>
                                                             </constraints>
-                                                            <string key="text">Адрес - ул. Комсомольская 23, г. Минск 
-Телефон - +375 (29) 175 50 50 
-E-mail - minsk.cutbarbershop@gmail.com
+                                                            <string key="text">Адрес -пр. Независимости, 13, Минск 
+Телефон - +375 (44) 464 01 04  
+E-mail - syndicate.minsk@gmail.com
 
 Режим работы
-без выходных 10:00 - 21:00</string>
+без выходных 8:00 - 21:00 
+воскресенье 11:00 - 18:00 </string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -279,19 +292,21 @@ E-mail - minsk.cutbarbershop@gmail.com
                                         <rect key="frame" x="0.0" y="662" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="unc-20-PGH" id="nGY-Vq-iJY">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F1-Nt-fLT">
+                                                    <rect key="frame" x="23" y="11.5" width="270" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="14z-oP-AOB"/>
-                                                        <constraint firstAttribute="width" constant="250" id="bbN-Ya-vuD"/>
+                                                        <constraint firstAttribute="width" constant="270" id="bbN-Ya-vuD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-bW-CyU">
+                                                    <rect key="frame" x="252" y="11.5" width="100" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="IdC-Zo-G0h"/>
                                                         <constraint firstAttribute="height" constant="21" id="ryS-As-GWI"/>
@@ -318,12 +333,14 @@ E-mail - minsk.cutbarbershop@gmail.com
                                         <rect key="frame" x="0.0" y="706" width="375" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwC-3A-DOD" id="cft-eA-fPa">
-                                            <frame key="frameInset" width="375" height="400"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-2P-aKf">
+                                                    <rect key="frame" x="16" y="16" width="343" height="368"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-r9-Clh">
+                                                            <rect key="frame" x="8" y="8" width="327" height="327"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="200" id="MzT-aD-8IM"/>
                                                                 <constraint firstAttribute="width" secondItem="Eai-r9-Clh" secondAttribute="height" multiplier="1:1" id="Pl3-OR-fXf"/>

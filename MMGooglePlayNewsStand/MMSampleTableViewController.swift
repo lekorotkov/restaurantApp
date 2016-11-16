@@ -101,8 +101,8 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
 //        ]
         
         sections = [
-            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой", "Стрижка Усов"], costs: ["30", "20", "20", "20"]),
-            Section(name: "Бритьё", items: ["Стрижка Бороды", "Бритье Опасной Бритвой"], costs: ["20", "35"])
+            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой"], costs: ["25", "15"]),
+            Section(name: "Бритьё", items: ["Бритьё бороды опасной бритвой", "Бритье головы опасной бритвой"], costs: ["20", "35"])
         ]
     }
     
@@ -138,17 +138,17 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         switch ( tag){
         case 1:
              headerImage.backgroundColor=UIColor(hexString: "E18E59")
-            headerImage.image=UIImage(named: "highlights")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            headerImage.image=UIImage(named: "buy")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 2:
              headerImage.backgroundColor=UIColor(hexString: "E18E59")
-              headerImage.image=UIImage(named: "sports")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+              headerImage.image=UIImage(named: "list_32x28")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 3:
              headerImage.backgroundColor=UIColor(hexString: "E18E59")
-              headerImage.image=UIImage(named: "movie")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+              headerImage.image=UIImage(named: "book_alt2_32x24")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             break
             
         case 4:
