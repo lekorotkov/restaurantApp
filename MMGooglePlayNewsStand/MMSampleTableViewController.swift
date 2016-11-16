@@ -68,6 +68,13 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         // Do any additional setup after loading the view.
         self.setNeedsStatusBarAppearanceUpdate()
         
+        
+        switch self.tag {
+        case 2: tableView.contentInset = UIEdgeInsetsMake(80, 0, 0, 0)
+        default:
+            break
+        }
+        
         switch self.tag {
         case 0:
             imageArr.append(UIImage(named: "ironman.jpg")!)
@@ -97,6 +104,13 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой", "Стрижка Усов"], costs: ["30", "20", "20", "20"]),
             Section(name: "Бритьё", items: ["Стрижка Бороды", "Бритье Опасной Бритвой"], costs: ["20", "35"])
         ]
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if self.tag == 2 {
+            return 20
+        }
+        return 0
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -154,18 +168,6 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         }
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if tag == 2 {
             return sections.count
@@ -173,13 +175,12 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         return 1;
     }
     
-     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if !preventAnimation.contains(indexPath) {
             preventAnimation.insert(indexPath)
             TipInCellAnimator.animate(cell)
         }
     }
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (tag == 2) {
@@ -246,13 +247,6 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if tag == 2 {
             return 44.0
-        }
-        return 0
-    }
-    
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if tag == 2 {
-            return 1.0
         }
         return 0
     }
