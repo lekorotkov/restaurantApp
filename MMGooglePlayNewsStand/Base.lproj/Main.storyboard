@@ -251,13 +251,12 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="140" id="FpY-VT-xAb"/>
                                                             </constraints>
-                                                            <string key="text">Адрес -пр. Независимости, 13, Минск 
-Телефон - +375 (44) 464 01 04  
-E-mail - syndicate.minsk@gmail.com
+                                                            <string key="text">Адрес - г. Минск, ул. К. Маркса, 21,пом. 6н
+Телефон - +375 (29) 101-33-44
+E-mail - gunbarbershop@gmail.com 
 
 Режим работы
-без выходных 8:00 - 21:00 
-воскресенье 11:00 - 18:00 </string>
+без выходных 10:00 - 22:00</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>

@@ -63,6 +63,10 @@
 		8AD1598B1DC5D49500921298 /* food3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159871DC5D49500921298 /* food3.jpg */; };
 		8AD1598C1DC5D49500921298 /* food4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AD159881DC5D49500921298 /* food4.jpg */; };
 		8AD1598E1DC613B100921298 /* QRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1598D1DC613B100921298 /* QRTableViewCell.swift */; };
+		8ADC1AA01DDE5B58007CD6C6 /* gun-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC1A9C1DDE5B58007CD6C6 /* gun-1.jpg */; };
+		8ADC1AA11DDE5B58007CD6C6 /* gun-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC1A9D1DDE5B58007CD6C6 /* gun-2.jpg */; };
+		8ADC1AA21DDE5B58007CD6C6 /* gun-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC1A9E1DDE5B58007CD6C6 /* gun-3.jpg */; };
+		8ADC1AA31DDE5B58007CD6C6 /* gun-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC1A9F1DDE5B58007CD6C6 /* gun-4.jpg */; };
 		A1E8EF5577AEA4F43C9F6F58 /* libPods-MMGooglePlayNewsStand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A375FD25656F8BFA052CDC /* libPods-MMGooglePlayNewsStand.a */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +147,10 @@
 		8AD159871DC5D49500921298 /* food3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food3.jpg; sourceTree = "<group>"; };
 		8AD159881DC5D49500921298 /* food4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food4.jpg; sourceTree = "<group>"; };
 		8AD1598D1DC613B100921298 /* QRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRTableViewCell.swift; sourceTree = "<group>"; };
+		8ADC1A9C1DDE5B58007CD6C6 /* gun-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gun-1.jpg"; sourceTree = "<group>"; };
+		8ADC1A9D1DDE5B58007CD6C6 /* gun-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gun-2.jpg"; sourceTree = "<group>"; };
+		8ADC1A9E1DDE5B58007CD6C6 /* gun-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gun-3.jpg"; sourceTree = "<group>"; };
+		8ADC1A9F1DDE5B58007CD6C6 /* gun-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gun-4.jpg"; sourceTree = "<group>"; };
 		C3731D51B4FBD7D9EAE764C1 /* Pods-MMGooglePlayNewsStand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMGooglePlayNewsStand.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMGooglePlayNewsStand/Pods-MMGooglePlayNewsStand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -272,6 +280,10 @@
 		5561F4DE1B8C44A500486A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8ADC1A9C1DDE5B58007CD6C6 /* gun-1.jpg */,
+				8ADC1A9D1DDE5B58007CD6C6 /* gun-2.jpg */,
+				8ADC1A9E1DDE5B58007CD6C6 /* gun-3.jpg */,
+				8ADC1A9F1DDE5B58007CD6C6 /* gun-4.jpg */,
 				8A83B6971DDD0B7100B55AEC /* synd-1.jpg */,
 				8A83B6991DDD0B7A00B55AEC /* synd-3.jpg */,
 				8A83B69A1DDD0B7A00B55AEC /* synd-4.jpg */,
@@ -422,19 +434,23 @@
 				5561F4E51B8C544E00486A57 /* sports.png in Resources */,
 				5561F4F61B8C617E00486A57 /* applebg.png in Resources */,
 				5561F4FB1B8C61D200486A57 /* ironman.jpg in Resources */,
+				8ADC1AA11DDE5B58007CD6C6 /* gun-2.jpg in Resources */,
 				8A83B6A41DDD0DC400B55AEC /* book_alt2_32x24.png in Resources */,
 				8A83B6A61DDD0E1900B55AEC /* buy.png in Resources */,
 				5561F4B41B8C3DC700486A57 /* LaunchScreen.xib in Resources */,
+				8ADC1AA31DDE5B58007CD6C6 /* gun-4.jpg in Resources */,
 				5561F4B11B8C3DC700486A57 /* Images.xcassets in Resources */,
 				5561F4D71B8C448C00486A57 /* bg@2x.jpg in Resources */,
 				8AD1598C1DC5D49500921298 /* food4.jpg in Resources */,
 				5561F4F11B8C577A00486A57 /* highlights.png in Resources */,
 				8A83B69E1DDD0B7A00B55AEC /* synd-4.jpg in Resources */,
+				8ADC1AA21DDE5B58007CD6C6 /* gun-3.jpg in Resources */,
 				8AD159891DC5D49500921298 /* food1.jpg in Resources */,
 				8AD1598A1DC5D49500921298 /* food2.jpg in Resources */,
 				8A83B69D1DDD0B7A00B55AEC /* synd-3.jpg in Resources */,
 				8AD1598B1DC5D49500921298 /* food3.jpg in Resources */,
 				8A83B6A21DDD0D3C00B55AEC /* list_32x28.png in Resources */,
+				8ADC1AA01DDE5B58007CD6C6 /* gun-1.jpg in Resources */,
 				8A83B6A01DDD0B7A00B55AEC /* synd-2.jpg in Resources */,
 				5561F4F81B8C617E00486A57 /* sportsbg.jpg in Resources */,
 				5561F5011B8C911100486A57 /* businessbg.jpg in Resources */,

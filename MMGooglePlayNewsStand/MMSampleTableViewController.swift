@@ -94,15 +94,9 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
             imageArr.append(UIImage(named: "ironman.jpg")!)
         }
         
-//        sections = [
-//            Section(name: "Стрижки", items: ["Стрижка машинкой", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]),
-//            Section(name: "iPad", items: ["iPad Pro", "iPad Air 2", "iPad mini 4", "Accessories"]),
-//            Section(name: "iPhone", items: ["iPhone 6s", "iPhone 6", "iPhone SE", "Accessories"]),
-//        ]
-        
         sections = [
-            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой"], costs: ["25", "15"]),
-            Section(name: "Бритьё", items: ["Бритьё бороды опасной бритвой", "Бритье головы опасной бритвой"], costs: ["20", "35"])
+            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой"], costs: ["300000", "200000"]),
+            Section(name: "Бритьё", items: ["Королевское бритьё", "Коррекция усов и бороды"], costs: ["250000", "200000"])
         ]
     }
     
