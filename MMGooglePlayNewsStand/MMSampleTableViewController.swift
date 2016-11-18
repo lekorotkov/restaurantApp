@@ -95,8 +95,8 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         }
         
         sections = [
-            Section(name: "Стрижкa", items: ["Мужская Стрижка", "Стрижка Машинкой"], costs: ["300000", "200000"]),
-            Section(name: "Бритьё", items: ["Королевское бритьё", "Коррекция усов и бороды"], costs: ["250000", "200000"])
+            Section(name: "Усы и борода", items: ["Бритье опасной бритвой", "Стрижка бороды, усов"], costs: ["40", "20"]),
+            Section(name: "Прическа", items: ["Мужская стрижка", "Стрижка машинкой", "Стрижка детей до 12 лет"], costs: ["40", "20", "28"])
         ]
     }
     

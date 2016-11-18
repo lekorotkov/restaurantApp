@@ -21,13 +21,13 @@ class InfoTableViewCell: UITableViewCell {
         middleView.layer.shadowOpacity  = 1.0
         middleView.layer.masksToBounds=true
         
-        let camera = GMSCameraPosition.cameraWithLatitude(53.897152,
-                                                          longitude: 27.555542, zoom: 17)
+        let camera = GMSCameraPosition.cameraWithLatitude(53.926690,
+                                                          longitude: 27.517804, zoom: 17)
         mapView.camera = camera
         
-        let position = CLLocationCoordinate2DMake(53.897152, 27.555542)
+        let position = CLLocationCoordinate2DMake(53.926690, 27.517804)
         let marker = GMSMarker(position: position)
-        marker.title = "Барбершоп Gun"
+        marker.title = "Барбершоп Brock"
         marker.map = mapView
         
     }
